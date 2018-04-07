@@ -11,14 +11,30 @@ GitSavvy
 Status Bar Time
 UnDoClosedTab
 SummitEditor
-SublimeLinter-php
 Assorted Gutter Themes
-Extract Sublime Package
+SublimeCodeIntel
+DocBlockr
+DocBlockr_Python
+AllAutocomplete	
+Alignment
+Color Highlighter
+Sidebar Enhancements
+AutoFileName
+ColorPicker
+
+Xdebug Client
 
 PHP.
 SublimePHPIntel
+SublimeLinter-php
 PHPCodeBeautifier
 Laravel5 Snippets
+PHP Twig tmBundle
+Sublime PHP Companion
+
+HTML
+Emmet
+
 
 Themes
 ColorSchemes
