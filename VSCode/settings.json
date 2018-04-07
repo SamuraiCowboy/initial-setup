@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Users\\vxa81\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "City Lights",
+    "files.autoSave": "off",
+    "git.confirmSync": false,
+    "workbench.activityBar.visible": true,
+    "php.validate.enable": false,
+    "php.suggest.basic": false,
+    "php.executablePath": "C:\\php\\php7.exe",
+    "window.zoomLevel": 0,
+    "files.associations": {"*.ctrl": "php", "*.mdl": "php", "*.view": "php", "*.inc": "php"},
+}

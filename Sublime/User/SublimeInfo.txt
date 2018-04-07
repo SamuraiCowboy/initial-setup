@@ -1,0 +1,40 @@
+SublimeGit
+SFTP
+BracketHighlighter
+TerminalView
+FunctionNameDisplay
+GitGutter
+SublimeLinter
+PackageControl
+PackageResourceViewer
+GitSavvy
+Status Bar Time
+UnDoClosedTab
+SummitEditor
+SublimeLinter-php
+Assorted Gutter Themes
+Extract Sublime Package
+
+PHP.
+SublimePHPIntel
+PHPCodeBeautifier
+Laravel5 Snippets
+
+Themes
+ColorSchemes
+
+Agila
+Ayu --> AFileIcon
+Boxy
+AfterGlow
+AlpenGlow
+CityLights
+AdeventureTime
+Seti
+
+Themes
+SeaLion
+SuperFlatAdventures
+DA UI
+Monokai Extended
+Monokai Pro
