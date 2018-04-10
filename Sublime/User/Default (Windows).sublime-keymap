@@ -19,6 +19,15 @@
     { "keys": ["ctrl+up"], "command": "swap_line_up" },
     { "keys": ["ctrl+down"], "command": "swap_line_down" },
     
+    //ColorPicker
+    { "keys": ["ctrl+alt+p"], "command": "color_pick" },
+
+    //Project Manager
+    {
+        "keys": ["ctrl+alt+j"],
+        "command": "project_manager", "args": {"action": "switch"}
+    },
+    
     //GitSavvy
     { "keys": ["ctrl+shift+i"], "command": "gs_inline_diff" },
     { "keys": ["ctrl+q"], "command": "gs_show_status" },

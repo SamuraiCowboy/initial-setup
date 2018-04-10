@@ -54,3 +54,13 @@ SuperFlatAdventures
 DA UI
 Monokai Extended
 Monokai Pro
+
+
+
+Duplicate Snippets
+Open the folder where ST is installed
+Open sublime_plugin.py
+Find def on_query_completions
+Replace return (completions, flags) with return (list(set(completions)), flags)"
+Save the file
+Restart ST
