@@ -97,6 +97,7 @@ set showmatch                       " display matching tag cursor
 set tw=80                           " automatic word wrapping
 set undolevels=1000                 " undo max number
 set wildmode=longest,list           " display tab completion
+set paste                           " pasting properly
 
 " extra settings
 syntax on                           " colored programming syntax
