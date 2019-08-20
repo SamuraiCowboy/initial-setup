@@ -1,0 +1,27 @@
+[user]
+    name = Venkata Rakesh Anne
+    email = AVRC26@gmail.com
+
+[color]
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
+
+[color "diff"]
+    meta = blue
+    frag = yellow
+    old = magenta
+    new = green
+
+[color "status"]
+    added = green
+    changed = magenta
+
+[color "branch"]
+    current = blue
+    local = yellow
+    remote = magenta
+
+[core]
+    excludesfile = ~/.gitignore_global
