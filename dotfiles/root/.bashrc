@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\e[01;31m\u\e[01;33m@\h \e[01;35m\w \e[01;36m$(__git_ps1 "[%s]")\e[0m \n:> '
+    PS1='\e[5m\e[01;31m\u \e[0m\e[01;32m\h \e[0;33m\w\e[0m \e[01;36m$(__git_ps1 "[%s]")\e[0m \e[5m\n\e[01;31m:>\e[0m '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -130,3 +130,11 @@ source ~/git-prompt.sh
 # alias ...='cd ../../..'
 # alias ..='cd ../..'
 # alias l='ls -la'
+
+echo -e -n "\x1b[\x30 q" # changes to blinking block
+#echo -e -n "\x1b[\x31 q" # changes to blinking block also
+#echo -e -n "\x1b[\x32 q" # changes to steady block
+#echo -e -n "\x1b[\x33 q" # changes to blinking underline
+#echo -e -n "\x1b[\x34 q" # changes to steady underline
+#echo -e -n "\x1b[\x35 q" # changes to blinking bar
+#echo -e -n "\x1b[\x36 q" # changes to steady bar

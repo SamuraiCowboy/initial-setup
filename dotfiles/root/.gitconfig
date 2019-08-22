@@ -9,19 +9,28 @@
     branch = auto
 
 [color "diff"]
-    meta = blue
-    frag = yellow
+    meta = cyan dim
+    frag = yellow dim
     old = magenta
     new = green
 
 [color "status"]
     added = green
     changed = magenta
+    branch = cyan bold blink
 
 [color "branch"]
-    current = blue
+    current = blue blink
     local = yellow
     remote = magenta
-
+[merge]
+    tool = vimdiff
+[diff]
+	tool = vimdiff
 [core]
+    editor = vim
     excludesfile = ~/.gitignore_global
+[difftool]
+	prompt = false
+[alias]
+	d = difftool

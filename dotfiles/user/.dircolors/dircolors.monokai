@@ -126,7 +126,7 @@ NORMAL 00
 # normal file
 FILE 00
 # directory
-DIR 35
+DIR 34
 # symbolic link
 LINK 01;36
 
@@ -305,33 +305,33 @@ EXEC 32  # Unix
 # }}}
 # Archives {{{
 
-.7z   34
-.apk  34
-.arj  34
-.bin  34
-.bz   34
-.bz2  34
-.cab  34  # Win
-.deb  34
-.dmg  34  # OSX
-.gem  34
-.gz   34
-.iso  34
-.jar  34
-.msi  34  # Win
-.rar  34
-.rpm  34
-.tar  34
-.tbz  34
-.tbz2 34
-.tgz  34
-.tx   34
-.war  34
-.xpi  34
-.xz   34
-.z    34
-.Z    34
-.zip  34
+.7z   35
+.apk  35
+.arj  35
+.bin  35
+.bz   35
+.bz2  35
+.cab  35  # Win
+.deb  35
+.dmg  35  # OSX
+.gem  35
+.gz   35
+.iso  35
+.jar  35
+.msi  35  # Win
+.rar  35
+.rpm  35
+.tar  35
+.tbz  35
+.tbz2 35
+.tgz  35
+.tx   35
+.war  35
+.xpi  35
+.xz   35
+.z    35
+.Z    35
+.zip  35
 
 # }}}
 # Testing {{{

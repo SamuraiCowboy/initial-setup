@@ -115,6 +115,13 @@ let g:airline_theme='onehalfdark' "one, neodark, deus, materialmonokai, onehalfd
 " eliminate trailing whitespaces
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
+
 " folds
 "set foldenable                     " enable folding
 "set foldlevelstart=0               " start out with everything folded
@@ -122,8 +129,8 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 set nofoldenable                    " disable folding
 
 " indentation
-set autoindent                      " auto indentation
-set copyindent                      " copy indentation
+"set autoindent                      " auto indentation
+"set copyindent                      " copy indentation
 
 " search
 set hlsearch                        " highlight search occurrences
