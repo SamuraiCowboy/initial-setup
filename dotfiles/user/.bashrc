@@ -98,7 +98,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gvd='git d'
 alias ga='git add'
-
+alias gc='git commit -m'
+alias gk='git checkout'
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
