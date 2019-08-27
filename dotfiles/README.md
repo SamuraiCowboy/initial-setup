@@ -38,6 +38,7 @@
     ## Different theme for ROOT
 
     For VIM:
+
         git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
         mv Stuffling/dotfiles/root/.vim* ~
