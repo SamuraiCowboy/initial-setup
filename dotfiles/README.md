@@ -9,49 +9,53 @@
 
       To install from command line: `vim +PluginInstall +qall`
 
-3. Tumx Installation Instructions
+3. Installation Instructions
 
-    git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
+        git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
-    mv ~/Stuffling/dotfiles/user/.vim* ~
+        mv ~/Stuffling/dotfiles/user/.vim* ~
 
-    mv ~/Stuffling/dotfiles/user/.bashrc ~
+        mv ~/Stuffling/dotfiles/user/.bashrc ~
 
-    mv ~/Stuffling/dotfiles/user/.tmux* ~
+        mv ~/Stuffling/dotfiles/user/.tmux* ~
 
-    mv ~/Stuffling/dotfiles/user/.gitconfig ~
+        mv ~/Stuffling/dotfiles/user/.gitconfig ~
 
-    mv ~/Stuffling/dotfiles/user/.dir* ~
+        mv ~/Stuffling/dotfiles/user/.dir* ~
 
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-    vim +PluginInstall +qall
+        vim +PluginInstall +qall
 
-    git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
+        git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 
-    git clone https://github.com/arl/tmux-gitbar.git ~/.tmux-gitbar
+        git clone https://github.com/arl/tmux-gitbar.git ~/.tmux-gitbar
 
     Install tmux plugins
-    `prefix + I`
 
-    ## root
-    git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
+        `prefix + I`
 
-    mv Stuffling/dotfiles/root/.vim* ~
+    ## Different theme for ROOT
 
-    mv Stuffling/dotfiles/root/.bashrc ~
+    For VIM:
+        git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
-    mv Stuffling/dotfiles/root/.gitconfig ~
+        mv Stuffling/dotfiles/root/.vim* ~
 
-    mv Stuffling/dotfiles/root/git-prompt.sh ~
+        mv Stuffling/dotfiles/root/.bashrc ~
 
-    mv Stuffling/dotfiles/root/.dir* ~
+        mv Stuffling/dotfiles/root/.gitconfig ~
 
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+        mv Stuffling/dotfiles/root/git-prompt.sh ~
 
-    vim +PluginInstall +qall
+        mv Stuffling/dotfiles/root/.dir* ~
 
-    If you need tmux as root do these:
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+        vim +PluginInstall +qall
+
+    If you need tmux for root:
+
         mv Stuffling/dotfiles/root/.tmux* ~
 
         git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
