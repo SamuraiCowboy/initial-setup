@@ -1,6 +1,7 @@
 ## Install Instructions
 
-1. monokai colors
+1. monokai colorsi
+
        git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
         mv ~/Stuffling/dotfiles/user/.vim* ~
