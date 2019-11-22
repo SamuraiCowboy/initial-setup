@@ -19,6 +19,15 @@
     { "keys": ["ctrl+up"], "command": "swap_line_up" },
     { "keys": ["ctrl+down"], "command": "swap_line_down" },
     
+    //ColorPicker
+    { "keys": ["ctrl+alt+p"], "command": "color_pick" },
+
+    //Project Manager
+    {
+        "keys": ["ctrl+alt+j"],
+        "command": "project_manager", "args": {"action": "switch"}
+    },
+    
     //GitSavvy
     { "keys": ["ctrl+shift+i"], "command": "gs_inline_diff" },
     { "keys": ["ctrl+q"], "command": "gs_show_status" },
@@ -31,7 +40,7 @@
     { "keys": ["ctrl+shift+h"], "command": "gs_stash_save" },
     { "keys": ["ctrl+shift+y"], "command": "gs_stash_apply" },
     { "keys": ["ctrl+shift+c"], "command": "gs_checkout_branch" },
-    { "keys": ["ctrl+shift+f"], "command": "gs_checkout_current_file" },
+    { "keys": ["ctrl+shift+\\"], "command": "gs_checkout_current_file" },
     { "keys": ["ctrl+shift+d"], "command": "gs_diff" },
     { "keys": ["ctrl+shift+w"], "command": "gs_show_branch" },
     { "keys": ["ctrl+shift+z"], "command": "gs_reset" },
