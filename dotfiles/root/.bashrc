@@ -58,7 +58,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     #PS1='\e[01;31m❝\u❞ \e[0m\e[0;32m☄ \h \e[0;33m➠ \w\e[0m \e[01;36m⎇$(__git_ps1 "[%s]")\e[0m \e[5m\n\e[01;31m⚠\e[0m '
-    PS1='\e[0;38;5;168m❛\u❜ \e[0;38;5;114m ♢ \h \e[0;38;5;180m ➠ \w \e[0;38;5;73m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  '
+    PS1='\e[0;38;5;168m❛\u❜\e[0;38;5;114m ♢ \h \e[0;38;5;73m ➠ \w \e[0;38;5;180m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -76,7 +76,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     #test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    eval "$(dircolors ~/.dircolors/dircolors.monokai)"
+    eval "$(dircolors ~/.dircolors/dircolors.onehalfdark)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
@@ -94,6 +94,13 @@ alias l='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
 alias ll='ls -lart'
+#GIT alias
+alias gs='git status'
+alias gd='git diff'
+alias gvd='git d'
+alias ga='git add'
+alias gc='git commit -m'
+alias gk='git checkout'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

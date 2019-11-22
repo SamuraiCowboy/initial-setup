@@ -58,7 +58,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
    # PS1='\e[0;32m❛\u™❜\e[0;33m ⚘ \h \e[0;35m ☛ \w \e[0m\n➾ '
-    PS1='\e[0;38;5;148m❛\u™❜ \e[0;38;5;208m ⚘ \h \e[0;38;5;141m ☛ \w \e[0;38;5;81m⎇ $(__git_ps1 "[%s]") \e[0;38;5;253m\n➾  '
+    PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚘ \h \e[0;38;5;81m ☛ \w \e[0;38;5;141m⎇ $(__git_ps1 "[%s]") \e[0;38;5;253m\n➾  '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -76,7 +76,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     #test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    eval "$(dircolors ~/.dircolors/dircolors.jellybeans)"
+    eval "$(dircolors ~/.dircolors/dircolors.monokai)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
