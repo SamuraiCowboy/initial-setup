@@ -12,6 +12,8 @@
 
         mv ~/Stuffling/dotfiles/user/.gitconfig ~
 
+        mv Stuffling/dotfiles/user/git-prompt.sh ~
+
         mv ~/Stuffling/dotfiles/user/.dir* ~
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -58,7 +58,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     #PS1='\e[01;31m❝\u❞ \e[0m\e[0;32m☄ \h \e[0;33m➠ \w\e[0m \e[01;36m⎇$(__git_ps1 "[%s]")\e[0m \e[5m\n\e[01;31m⚠\e[0m '
-    PS1='\e[0;38;5;168m❛\u❜\e[0;38;5;114m ♢ \h \e[0;38;5;73m ➠ \w \e[0;38;5;180m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  '
+    PS1='\e[0;38;5;168m❛\u❜\e[0;38;5;114m ♢ \h \e[01;38;5;73m ➠ \w \e[0;38;5;180m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -101,6 +101,13 @@ alias gvd='git d'
 alias ga='git add'
 alias gc='git commit -m'
 alias gk='git checkout'
+alias vi='vim'
+alias exit='sed -i s/303030/262626/g /home/centos/.vscode-server/data/Machine/settings.json;exit'
+
+FILE=/home/centos/.vscode-server/data/Machine/settings.json
+if test -f "$FILE"; then
+    sed -i "s/262626/303030/g" $FILE
+fi
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

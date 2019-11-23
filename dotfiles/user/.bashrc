@@ -101,6 +101,14 @@ alias gvd='git d'
 alias ga='git add'
 alias gc='git commit -m'
 alias gk='git checkout'
+alias vi='vim'
+
+FILE=/home/centos/.vscode-server/data/Machine/settings.json
+if test -f "$FILE"; then
+    sed -i "s/303030/262626/g" $FILE
+fi
+
+source ~/git-prompt.sh
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -138,10 +146,10 @@ fi
 # alias ..='cd ../..'
 # alias l='ls -la'
 
-echo -e -n "\x1b[\x30 q" # changes to blinking block
+#echo -e -n "\x1b[\x30 q" # changes to blinking block
 #echo -e -n "\x1b[\x31 q" # changes to blinking block also
 #echo -e -n "\x1b[\x32 q" # changes to steady block
 #echo -e -n "\x1b[\x33 q" # changes to blinking underline
 #echo -e -n "\x1b[\x34 q" # changes to steady underline
-#echo -e -n "\x1b[\x35 q" # changes to blinking bar
+echo -e -n "\x1b[\x35 q" # changes to blinking bar
 #echo -e -n "\x1b[\x36 q" # changes to steady bar
