@@ -14,7 +14,7 @@
 
         mv Stuffling/dotfiles/user/git-prompt.sh ~
 
-        mv ~/Stuffling/dotfiles/user/.dir* ~
+        mv ~/Stuffling/dotfiles/user/.dircolors/dircolors.monokai ~/.dircolors.monokai
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -42,7 +42,7 @@
 
         mv Stuffling/dotfiles/root/git-prompt.sh ~
 
-        mv Stuffling/dotfiles/root/.dir* ~
+        mv Stuffling/dotfiles/root/.dircolors/dircolors.onehalfdark ~/.dircolors.onehalfdark
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
