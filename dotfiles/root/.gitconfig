@@ -18,12 +18,12 @@
     added = 142     # green
     changed = 208   # orange
     untracked = 167 # red
-    branch = 108 bold blink # cyan
+    branch = 96 bold blink # purple
 
 [color "branch"]
-    current = 108 blink # cyan
+    current = 96 blink # purple
     local = 172         # yellow
-    remote = 175        # purple
+    remote = 174        # light yellow
 [merge]
     tool = vimdiff
 [diff]

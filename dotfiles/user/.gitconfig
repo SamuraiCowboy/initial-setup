@@ -12,18 +12,18 @@
     meta = 81 dim   # cyan
     frag = 186 dim  # yellow
     old = 197       # red
-    new = 114       # green      
+    new = 149       # green      
 
 [color "status"]
-    added = 114     # green
+    added = 149     # green
     changed = 197   # red (light)
     untracked = 220 # red
-    branch = 81 bold blink # cyan
+    branch = 141 bold blink # purple
 
 [color "branch"]
-    current = 81 blink  # cyan
+    current = 141 blink # purple
     local = 186         # yellow
-    remote = 141        # purple
+    remote = 189        # light yellow
 [merge]
     tool = vimdiff
 [diff]

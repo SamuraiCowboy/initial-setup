@@ -58,8 +58,9 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     #PS1='\e[0;38;5;168m❛\u❜\e[0;38;5;114m ♢ \h \e[0;38;5;73m ➠ \w \e[0;38;5;180m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' # onehalf
-    PS1='\e[01;38;5;167m❛\u❜\e[0;38;5;142m ♢ \h \e[0;38;5;108m ➠ \w \e[0;38;5;175m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' #gruvbox dark hard
+    # PS1='\e[01;38;5;167m❛\u❜\e[0;38;5;142m ♢ \h \e[0;38;5;108m ➠ \w \e[0;38;5;175m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' #gruvbox dark hard
     # PS1='\e[01;38;5;88m❛\u❜\e[0;38;5;100m ♢ \h \e[0;38;5;66m ➠ \w \e[0;38;5;96m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' #gruvbox light soft
+    PS1='\e[01;38;5;167m❛\u❜\e[0;38;5;142m ♢ \h \e[0;38;5;108m ➠ \w \e[0m\n⚠  ' #gruvbox dark hard
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -111,7 +112,7 @@ if test -f "$FILE"; then
     # sed -i "s/\"Monokai Pro (Filter Spectrum)\"/\"Gruvbox Light Soft\"/g" $FILE
     # alias exit="sed -i 's/f2e5bc/262626/g; s/\"Gruvbox Light Soft\"/\"Monokai Pro (Filter Spectrum)\"/g' $FILE; exit"
     # gruvbox dark hard
-    sed -i "s/262626/1d2021/g" $FILE
+    # sed -i "s/262626/1d2021/g" $FILE
     sed -i "s/\"Monokai Pro (Filter Spectrum)\"/\"Gruvbox Dark Hard\"/g" $FILE
     alias exit="sed -i 's/1d2021/262626/g; s/\"Gruvbox Dark Hard\"/\"Monokai Pro (Filter Spectrum)\"/g' $FILE; exit"
 fi
@@ -144,7 +145,35 @@ fi
 # export PS1='\e[0;32m\u\e[0;31m@\h \e[0;35m\w \e[0;36m$(__git_ps1 "[%s]")\e[0m
 # :> '
 # fi
-source ~/git-prompt.sh
+
+# source ~/git-prompt.sh
+# GIT PROMPT Configurations
+
+# GIT_PROMPT_FETCH_REMOTE_STATUS=0   # uncomment to avoid fetching remote status
+# GIT_PROMPT_IGNORE_SUBMODULES=1 # uncomment to avoid searching for changed files in submodules
+# GIT_PROMPT_WITH_VIRTUAL_ENV=0 # uncomment to avoid setting virtual environment infos for node/python/conda environments
+
+# GIT_PROMPT_SHOW_UPSTREAM=1 # uncomment to show upstream tracking branch
+# GIT_PROMPT_SHOW_UNTRACKED_FILES=normal # can be no, normal or all; determines counting of untracked files
+
+# GIT_PROMPT_SHOW_CHANGED_FILES_COUNT=0 # uncomment to avoid printing the number of changed files
+
+# GIT_PROMPT_STATUS_COMMAND=gitstatus_pre-1.7.10.sh # uncomment to support Git older than 1.7.10
+
+GIT_PROMPT_START='\e[01;38;5;167m❛\u❜\e[0;38;5;142m ♢ \h \e[0;38;5;108m ➠ \w \e[0m ' # uncomment for custom prompt start sequence
+GIT_PROMPT_END='\e[0m\n⚠  ' # uncomment for custom prompt end sequence
+GIT_PROMPT_ONLY_IN_REPO=1
+
+# as last entry source the gitprompt script
+GIT_PROMPT_THEME=Custom # use custom theme specified in file GIT_PROMPT_THEME_FILE (default ~/.git-prompt-colors.sh)
+GIT_PROMPT_THEME_FILE=~/.git-prompt-colors.sh
+# GIT_PROMPT_THEME=Chmike # use theme optimized for solarized color scheme
+
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
+
 # export TERM="xterm-256color"
 # export LESS=FRX
 # alias .....='cd ../../../../..'
