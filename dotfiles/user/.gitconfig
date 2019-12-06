@@ -9,20 +9,21 @@
     branch = auto
 
 [color "diff"]
-    meta = 81 dim
-    frag = 186 dim
-    old = 197
-    new = 148
+    meta = 81 dim   # cyan
+    frag = 186 dim  # yellow
+    old = 197       # red
+    new = 114       # green      
 
 [color "status"]
-    added =148
-    changed = 197
-    branch = 81 bold blink
+    added = 114     # green
+    changed = 197   # red (light)
+    untracked = 220 # red
+    branch = 81 bold blink # cyan
 
 [color "branch"]
-    current = 81 blink
-    local = 186
-    remote = 141
+    current = 81 blink  # cyan
+    local = 186         # yellow
+    remote = 141        # purple
 [merge]
     tool = vimdiff
 [diff]

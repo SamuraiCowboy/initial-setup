@@ -58,7 +58,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
    # PS1='\e[0;32m❛\u™❜\e[0;33m ⚘ \h \e[0;35m ☛ \w \e[0m\n➾ '
-    PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚘ \h \e[0;38;5;81m ☛ \w \e[0;38;5;141m⎇ $(__git_ps1 "[%s]") \e[0;38;5;253m\n➾  '
+    PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚘ \h \e[0;38;5;81m ☛ \w \e[0;38;5;141m⎇ $(__git_ps1 "[%s]") \e[0m\n➾  '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -105,7 +105,11 @@ alias vi='vim'
 
 FILE=/home/centos/.vscode-server/data/Machine/settings.json
 if test -f "$FILE"; then
-    sed -i "s/303030/262626/g" $FILE
+    sed -i "s/f2e5bc/262626/g" $FILE
+    sed -i "s/\"Gruvbox Light Soft\"/\"Monokai Pro (Filter Spectrum)\"/g" $FILE
+    # gruvbox dark hard
+    # sed -i "s/1d2021/262626/g" $FILE
+    # sed -i "s/\"Gruvbox Dark Hard\"/\"Monokai Pro (Filter Spectrum)\"/g" $FILE
 fi
 
 source ~/git-prompt.sh

@@ -101,13 +101,14 @@ set paste                           " pasting properly
 
 " extra settings
 syntax on                           " colored programming syntax
-colorscheme material-monokai       " vim color scheme :: one, deus, onedark, one-dark, material-monokai, neodark
+colorscheme materialmonokai        " material-monokai
 "set background=dark " for the dark version
 "set background=light " for the light version
 
 highlight ColorColumn ctermbg=124
 highlight CursorColumn ctermbg=236
-let g:airline_theme='one' "neodark, deus, materialmonokai
+hi Normal guibg=NONE ctermbg=NONE
+let g:airline_theme='materialmonokai' " material-monokai
 
 " eliminate trailing whitespaces
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif

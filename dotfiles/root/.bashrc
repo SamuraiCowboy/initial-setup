@@ -57,8 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    #PS1='\e[01;31m❝\u❞ \e[0m\e[0;32m☄ \h \e[0;33m➠ \w\e[0m \e[01;36m⎇$(__git_ps1 "[%s]")\e[0m \e[5m\n\e[01;31m⚠\e[0m '
-    PS1='\e[0;38;5;168m❛\u❜\e[0;38;5;114m ♢ \h \e[01;38;5;73m ➠ \w \e[0;38;5;180m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  '
+    #PS1='\e[0;38;5;168m❛\u❜\e[0;38;5;114m ♢ \h \e[0;38;5;73m ➠ \w \e[0;38;5;180m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' # onehalf
+    PS1='\e[01;38;5;167m❛\u❜\e[0;38;5;142m ♢ \h \e[0;38;5;108m ➠ \w \e[0;38;5;175m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' #gruvbox dark hard
+    # PS1='\e[01;38;5;88m❛\u❜\e[0;38;5;100m ♢ \h \e[0;38;5;66m ➠ \w \e[0;38;5;96m⎇ $(__git_ps1 "[%s]") \e[0m\n⚠  ' #gruvbox light soft
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -76,7 +77,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     #test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    eval "$(dircolors ~/.dircolors.onehalfdark)"
+    eval "$(dircolors ~/.dircolors.gruvbox_darkhard)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
@@ -102,11 +103,17 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gk='git checkout'
 alias vi='vim'
-alias exit='sed -i s/303030/262626/g /home/centos/.vscode-server/data/Machine/settings.json;exit'
 
 FILE=/home/centos/.vscode-server/data/Machine/settings.json
 if test -f "$FILE"; then
-    sed -i "s/262626/303030/g" $FILE
+    # gruvbox light soft
+    # sed -i "s/262626/f2e5bc/g" $FILE
+    # sed -i "s/\"Monokai Pro (Filter Spectrum)\"/\"Gruvbox Light Soft\"/g" $FILE
+    # alias exit="sed -i 's/f2e5bc/262626/g; s/\"Gruvbox Light Soft\"/\"Monokai Pro (Filter Spectrum)\"/g' $FILE; exit"
+    # gruvbox dark hard
+    sed -i "s/262626/1d2021/g" $FILE
+    sed -i "s/\"Monokai Pro (Filter Spectrum)\"/\"Gruvbox Dark Hard\"/g" $FILE
+    alias exit="sed -i 's/1d2021/262626/g; s/\"Gruvbox Dark Hard\"/\"Monokai Pro (Filter Spectrum)\"/g' $FILE; exit"
 fi
 
 # Alias definitions.
@@ -146,10 +153,10 @@ source ~/git-prompt.sh
 # alias ..='cd ../..'
 # alias l='ls -la'
 
-echo -e -n "\x1b[\x30 q" # changes to blinking block
+#echo -e -n "\x1b[\x30 q" # changes to blinking block
 #echo -e -n "\x1b[\x31 q" # changes to blinking block also
 #echo -e -n "\x1b[\x32 q" # changes to steady block
 #echo -e -n "\x1b[\x33 q" # changes to blinking underline
 #echo -e -n "\x1b[\x34 q" # changes to steady underline
-#echo -e -n "\x1b[\x35 q" # changes to blinking bar
+echo -e -n "\x1b[\x35 q" # changes to blinking bar
 #echo -e -n "\x1b[\x36 q" # changes to steady bar
