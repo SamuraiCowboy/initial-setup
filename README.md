@@ -1,5 +1,3 @@
-<img src='Welcome.gif' width=100% height=100%>
-
 ## #!/Hello/World
 
 <span style="color:grey">
@@ -17,7 +15,7 @@ function ``needMoreInfo()`` {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for `` Sublime ``
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;click [HERE](Sublime/README.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;click [HERE](Sublime/User/README.md)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for `` VSCode ``
 
@@ -76,7 +74,7 @@ function `` givenCredits() `` {
 
 # Licence
 
-This Code is under [Apache License 2.0](LICENCE)
+This Code is under [Apache License 2.0](LICENSE)
 
 # About Me
 
@@ -90,3 +88,6 @@ I,
 * do like Innovation
 * do like Gadgets and
 * do love Google!
+
+
+<img src='Welcome.gif' width=100% height=100%>
