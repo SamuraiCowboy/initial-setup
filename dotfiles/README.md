@@ -1,6 +1,7 @@
 # Install Instructions
 
-#### monokai colors for user
+## USER
+* #### Monokai colors
 
         git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
@@ -19,16 +20,17 @@
 
         vim +PluginInstall +qall
 
-    Install git-prompt
+* #### Install git-prompt
 
         git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
         ln -s ~/Stuffling/dotfiles/user/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
 
-    Install tmux for user
+* #### Install tmux
+        sudo yum install -y tmux
 
-        mv ~/Stuffling/dotfiles/user/.tmux* ~
+        cp -r ~/Stuffling/dotfiles/user/.tmux* ~
 
         git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 
@@ -38,7 +40,8 @@
 
         `prefix + I`
 
-#### gruvbox theme for root (alt)
+## ROOT
+* #### gruvbox theme
 
         sudo ln -s ~/Stuffling/dotfiles/root/.vim /root/.vim
         sudo ln -s ~/Stuffling/dotfiles/root/.vimrc /root/.vimrc
@@ -56,16 +59,26 @@
         Switch to root:
         vim +PluginInstall +qall
 
-    Install git-prompt
+* #### Install git-prompt
 
         sudo git clone https://github.com/magicmonty/bash-git-prompt.git /root/.bash-git-prompt --depth=1
 
         sudo ln -s ~/Stuffling/dotfiles/root/.git-prompt-colors.sh /root/.git-prompt-colors.sh
 
-    If you need tmux for root:
+* #### Install tmux (not recommended for root)
 
         mv Stuffling/dotfiles/root/.tmux* ~
 
         git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 
         git clone https://github.com/arl/tmux-gitbar.git ~/.tmux-gitbar
+    
+    Install tmux plugins
+
+        `prefix + I`
+
+
+PS: 
+
+* tmux plugin prefix `` ctrl + a ``
+* root has onehalf color scheme available.

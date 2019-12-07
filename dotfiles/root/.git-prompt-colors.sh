@@ -13,8 +13,10 @@ override_git_prompt_colors() {
   # PathShort="\w";
 
   ## These are the color definitions used by gitprompt.sh
-  GIT_PROMPT_PREFIX="\e[0;38;5;241m["                 # start of the git info string
-  GIT_PROMPT_SUFFIX="\e[0;38;5;241m]"                 # the end of the git info string
+  GIT_PROMPT_PREFIX="\e[0;38;5;241m⎇ "                 # start of the git info string
+  # GIT_PROMPT_PREFIX="\e[0;38;5;241m["                 # start of the git info string
+  # GIT_PROMPT_SUFFIX="\e[0;38;5;241m]"                 # the end of the git info string
+  GIT_PROMPT_SUFFIX="\e[0;38;5;241m"                 # the end of the git info string
   GIT_PROMPT_SEPARATOR="\e[0;38;5;241m |"              # separates each item
 
   GIT_PROMPT_BRANCH="\e[0;38;5;96m"        # the git branch that is active in the current directory

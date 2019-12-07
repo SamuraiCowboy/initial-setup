@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-   # PS1='\e[0;32m❛\u™❜\e[0;33m ⚘ \h \e[0;35m ☛ \w \e[0m\n➾ '
-    # PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚘ \h \e[0;38;5;81m ☛ \w \e[0;38;5;141m⎇ $(__git_ps1 "[%s]") \e[0m\n➾  ' # commented to accomodate git_prompt
-    PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚘ \h \e[0;38;5;81m ☛ \w \e[0m\n➾  '
+   # PS1='\e[0;32m❛\u™❜\e[0;33m ⚚ \h \e[0;35m ☛ \w \e[0m\n➾ '
+    # PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚚ \h \e[0;38;5;81m ☛ \w \e[0;38;5;141m⎇ $(__git_ps1 "[%s]") \e[0m\n➾  ' # commented to accomodate git_prompt
+    PS1='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚚ \h \e[0;38;5;81m ☛ \w \e[0m\n➾  '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -127,7 +127,7 @@ fi
 
 # GIT_PROMPT_STATUS_COMMAND=gitstatus_pre-1.7.10.sh # uncomment to support Git older than 1.7.10
 
-GIT_PROMPT_START='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚘ \h \e[0;38;5;81m ☛ \w\e[0m ' # uncomment for custom prompt start sequence
+GIT_PROMPT_START='\e[0;38;5;148m❛\u™❜\e[0;38;5;208m ⚚ \h \e[0;38;5;81m ☛ \w\e[0m ' # uncomment for custom prompt start sequence
 GIT_PROMPT_END='\e[0m\n➾  ' # uncomment for custom prompt end sequence
 GIT_PROMPT_ONLY_IN_REPO=1
 
