@@ -7,6 +7,9 @@ call vundle#begin()
 "call vundle#begin('$HOME/.vim/bundle/')
 
 Plugin 'VundleVim/Vundle.vim'                           " main vundle plugin
+Plugin 'morhetz/gruvbox'                                " gruv box theme
+    " let g:gruvbox_contrast_light = 'soft'             " gruvbox light
+    let g:gruvbox_contrast_dark = 'hard'                " gruvbox light
 Plugin 'airblade/vim-gitgutter'                         " git diff inside vim
 Plugin 'gregsexton/MatchTag'                            " html match tag
 Plugin 'kien/ctrlp.vim'                                 " fuzzy-finder file
@@ -104,13 +107,14 @@ set t_Co=256
 
 " extra settings
 syntax on                           " colored programming syntax
-colorscheme onehalfdark       " vim color scheme :: one, deus, onedark, one-dark, material-monokai, neodark onehalflight, onehalfdark
-"set background=dark " for the dark version
-"set background=light " for the light version
+colorscheme gruvbox                 " vim color scheme :: one, deus, onedark, one-dark, material-monokai, neodark onehalflight, onehalfdark, gruvbox
+set background=dark                 " for the dark version
+"set background=light               " for the light version
 
 highlight ColorColumn ctermbg=124
 highlight CursorColumn ctermbg=236
-let g:airline_theme='onehalfdark' "one, neodark, deus, materialmonokai, onehalfdark, onehalflight
+hi Normal guibg=NONE ctermbg=NONE
+let g:airline_theme='gruvbox' "one, neodark, deus, materialmonokai, onehalfdark, onehalflight, gruvbox
 
 " eliminate trailing whitespaces
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
