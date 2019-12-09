@@ -5,16 +5,15 @@
 
         git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
-        ln -s ~/Stuffling/dotfiles/user/.vim ~/.vim
-        ln -s ~/Stuffling/dotfiles/user/.vimrc ~/.vimrc
+        mv ~/Stuffling/dotfiles/user/.vim ~
+        
+        mv ~/Stuffling/dotfiles/user/.vimrc ~
 
-        ln -s ~/Stuffling/dotfiles/user/.bashrc ~
+        mv ~/Stuffling/dotfiles/user/.bashrc ~
 
-        ln -s ~/Stuffling/dotfiles/user/.gitconfig ~
+        mv ~/Stuffling/dotfiles/user/.gitconfig ~
 
-        ln -s ~/Stuffling/dotfiles/user/git-prompt.sh ~
-
-        ln -s ~/Stuffling/dotfiles/user/.dircolors/dircolors.monokai ~/.dircolors.monokai
+        mv ~/Stuffling/dotfiles/user/.dircolors/dircolors.monokai ~/.dircolors.monokai
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -24,7 +23,7 @@
 
         git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
-        ln -s ~/Stuffling/dotfiles/user/.git-prompt-colors.sh ~/.git-prompt-colors.sh
+        mv ~/Stuffling/dotfiles/user/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
 
 * #### Install tmux
@@ -43,16 +42,15 @@
 ## ROOT
 * #### gruvbox theme
 
-        sudo ln -s ~/Stuffling/dotfiles/root/.vim /root/.vim
-        sudo ln -s ~/Stuffling/dotfiles/root/.vimrc /root/.vimrc
+        sudo mv ~/Stuffling/dotfiles/root/.vim /root/.vim/
+        
+        sudo mv ~/Stuffling/dotfiles/root/.vimrc /root/.vimrc
 
-        sudo ln -s ~/Stuffling/dotfiles/root/.bashrc /root/.bashrc
+        sudo mv ~/Stuffling/dotfiles/root/.bashrc /root/.bashrc
 
-        sudo ln -s ~/Stuffling/dotfiles/root/.gitconfig /root/.gitconfig
+        sudo mv ~/Stuffling/dotfiles/root/.gitconfig /root/.gitconfig
 
-        sudo ln -s ~/Stuffling/dotfiles/root/git-prompt.sh /root/git-prompt.sh
-
-        sudo ln -s ~/Stuffling/dotfiles/root/.dircolors/dircolors.gruvbox_darkhard /root/.dircolors.gruvbox_darkhard
+        sudo mv ~/Stuffling/dotfiles/root/.dircolors/dircolors.gruvbox_darkhard /root/.dircolors.gruvbox_darkhard
 
         sudo git clone https://github.com/VundleVim/Vundle.vim.git /root/.vim/bundle/Vundle.vim
 
@@ -63,7 +61,7 @@
 
         sudo git clone https://github.com/magicmonty/bash-git-prompt.git /root/.bash-git-prompt --depth=1
 
-        sudo ln -s ~/Stuffling/dotfiles/root/.git-prompt-colors.sh /root/.git-prompt-colors.sh
+        sudo mv ~/Stuffling/dotfiles/root/.git-prompt-colors.sh /root/.git-prompt-colors.sh
 
 * #### Install tmux (not recommended for root)
 
