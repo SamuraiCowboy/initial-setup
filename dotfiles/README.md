@@ -99,6 +99,9 @@
 
         mv ~/Stuffling/dotfiles/win/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
+* #### default git-prompt
+        mv ~/Stuffling/dotfiles/win/git-prompt.sh ~/.git-prompt.sh 
+
 PS: 
 
 * tmux plugin prefix `` ctrl + a ``
