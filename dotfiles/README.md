@@ -1,7 +1,7 @@
 # Install Instructions
 
 ## USER
-* #### Monokai colors
+* #### monokai theme
 
         git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
 
@@ -75,6 +75,29 @@
 
         `prefix + I`
 
+## VS Code - GIT Bash
+* #### default theme
+
+        mv ~/Stuffling/dotfiles/win/.vim ~/.vim/
+        
+        mv ~/Stuffling/dotfiles/win/.vimrc ~/.vimrc
+
+        mv ~/Stuffling/dotfiles/win/.bashrc ~/.bashrc
+
+        mv ~/Stuffling/dotfiles/win/.gitconfig ~/.gitconfig
+
+        mv ~/Stuffling/dotfiles/win/.dircolors/dircolors.default /root/.dircolors.default
+
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+        Switch to root:
+        vim +PluginInstall +qall
+
+* #### Install git-prompt
+
+        git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+
+        mv ~/Stuffling/dotfiles/win/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
 PS: 
 
