@@ -102,7 +102,29 @@
 * #### default git-prompt
         mv ~/Stuffling/dotfiles/win/git-prompt.sh ~/.git-prompt.sh 
 
+* #### optional base16
+        git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
+
 PS: 
 
 * tmux plugin prefix `` ctrl + a ``
 * root has onehalf color scheme available.
+* base16 win usage - `` base16-monokai ``
+* script to print 256 colors
+
+
+        for i in {0..255} ; do
+            printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
+            if (( i == 15 )) || (( i > 15 )) && (( (i-15) % 6 == 0 )); then
+                printf "\n";
+            fi
+        done
+
+* script to print current base16 colors
+
+        for x in {0..8}; do for i in {30..37}; do for a in {40..47}; do echo -ne "\e[$x;$i;$a""m\\\e[$x;$i;$a""m\e[0;37;40m "; done; echo; done; done; echo ""
+
+* dos2unix in folder
+
+        find . -type f -print0 | xargs -0 dos2unix

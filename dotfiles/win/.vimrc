@@ -102,6 +102,11 @@ set paste                           " pasting properly
 " extra settings
 syntax on                           " colored programming syntax
 colorscheme materialmonokai        " material-monokai
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
 "set background=dark " for the dark version
 "set background=light " for the light version
 
