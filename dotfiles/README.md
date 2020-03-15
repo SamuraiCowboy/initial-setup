@@ -109,6 +109,11 @@
 ## CONTAINERS (alpine)
 * #### onedark theme
         apk update
+        apk upgrade
+        apk add git --no-cache -y
+        apk add -y vim --no-cache
+        apk add -y bash --no-cache
+        # dircolors not functional in alpine image
 
         git clone https://github.com/AVRC26/stuffling.git ~/stuffling
 
@@ -120,7 +125,9 @@
 
         mv ~/stuffling/dotfiles/containers/.gitconfig ~
 
-        mv ~/stuffling/dotfiles/containers/.dircolors/dircolors.monokai ~/.dircolors.monokai
+        mv ~/stuffling/dotfiles/containers/.dircolors/dircolors.onehalfdark ~/.dircolors.onehalfdark
+
+        mv ~/stuffling/dotfiles/containers/vs-code.settings.json ~/.vscode-server/data/Machine/settings.json
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
