@@ -3,17 +3,17 @@
 ## USER
 * #### monokai theme
 
-        git clone https://github.com/AVRC26/Stuffling.git ~/Stuffling
+        git clone https://github.com/AVRC26/stuffling.git ~/stuffling
 
-        mv ~/Stuffling/dotfiles/user/.vim ~
+        mv ~/stuffling/dotfiles/user/.vim ~
         
-        mv ~/Stuffling/dotfiles/user/.vimrc ~
+        mv ~/stuffling/dotfiles/user/.vimrc ~
 
-        mv ~/Stuffling/dotfiles/user/.bashrc ~
+        mv ~/stuffling/dotfiles/user/.bashrc ~
 
-        mv ~/Stuffling/dotfiles/user/.gitconfig ~
+        mv ~/stuffling/dotfiles/user/.gitconfig ~
 
-        mv ~/Stuffling/dotfiles/user/.dircolors/dircolors.monokai ~/.dircolors.monokai
+        mv ~/stuffling/dotfiles/user/.dircolors/dircolors.monokai ~/.dircolors.monokai
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -23,13 +23,13 @@
 
         git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
-        mv ~/Stuffling/dotfiles/user/.git-prompt-colors.sh ~/.git-prompt-colors.sh
+        mv ~/stuffling/dotfiles/user/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
 
 * #### Install tmux
         sudo yum install -y tmux
 
-        cp -r ~/Stuffling/dotfiles/user/.tmux* ~
+        cp -r ~/stuffling/dotfiles/user/.tmux* ~
 
         git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 
@@ -42,15 +42,15 @@
 ## ROOT
 * #### gruvbox theme
 
-        sudo mv ~/Stuffling/dotfiles/root/.vim /root/.vim/
+        sudo mv ~/stuffling/dotfiles/root/.vim /root/.vim/
         
-        sudo mv ~/Stuffling/dotfiles/root/.vimrc /root/.vimrc
+        sudo mv ~/stuffling/dotfiles/root/.vimrc /root/.vimrc
 
-        sudo mv ~/Stuffling/dotfiles/root/.bashrc /root/.bashrc
+        sudo mv ~/stuffling/dotfiles/root/.bashrc /root/.bashrc
 
-        sudo mv ~/Stuffling/dotfiles/root/.gitconfig /root/.gitconfig
+        sudo mv ~/stuffling/dotfiles/root/.gitconfig /root/.gitconfig
 
-        sudo mv ~/Stuffling/dotfiles/root/.dircolors/dircolors.gruvbox_darkhard /root/.dircolors.gruvbox_darkhard
+        sudo mv ~/stuffling/dotfiles/root/.dircolors/dircolors.gruvbox_darkhard /root/.dircolors.gruvbox_darkhard
 
         sudo git clone https://github.com/VundleVim/Vundle.vim.git /root/.vim/bundle/Vundle.vim
 
@@ -61,11 +61,11 @@
 
         sudo git clone https://github.com/magicmonty/bash-git-prompt.git /root/.bash-git-prompt --depth=1
 
-        sudo mv ~/Stuffling/dotfiles/root/.git-prompt-colors.sh /root/.git-prompt-colors.sh
+        sudo mv ~/stuffling/dotfiles/root/.git-prompt-colors.sh /root/.git-prompt-colors.sh
 
 * #### Install tmux (not recommended for root)
 
-        mv Stuffling/dotfiles/root/.tmux* ~
+        mv stuffling/dotfiles/root/.tmux* ~
 
         git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 
@@ -78,15 +78,15 @@
 ## VS Code - GIT Bash
 * #### default theme
 
-        mv ~/Stuffling/dotfiles/win/.vim ~/.vim/
+        mv ~/stuffling/dotfiles/win/.vim ~/.vim/
         
-        mv ~/Stuffling/dotfiles/win/.vimrc ~/.vimrc
+        mv ~/stuffling/dotfiles/win/.vimrc ~/.vimrc
 
-        mv ~/Stuffling/dotfiles/win/.bashrc ~/.bashrc
+        mv ~/stuffling/dotfiles/win/.bashrc ~/.bashrc
 
-        mv ~/Stuffling/dotfiles/win/.gitconfig ~/.gitconfig
+        mv ~/stuffling/dotfiles/win/.gitconfig ~/.gitconfig
 
-        mv ~/Stuffling/dotfiles/win/.dircolors/dircolors.default /root/.dircolors.default
+        mv ~/stuffling/dotfiles/win/.dircolors/dircolors.default /root/.dircolors.default
 
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -97,13 +97,40 @@
 
         git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
-        mv ~/Stuffling/dotfiles/win/.git-prompt-colors.sh ~/.git-prompt-colors.sh
+        mv ~/stuffling/dotfiles/win/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
 * #### default git-prompt
-        mv ~/Stuffling/dotfiles/win/git-prompt.sh ~/.git-prompt.sh 
+        mv ~/stuffling/dotfiles/win/git-prompt.sh ~/.git-prompt.sh 
 
 * #### optional base16
         git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
+
+## CONTAINERS (alpine)
+* #### onedark theme
+        apk update
+
+        git clone https://github.com/AVRC26/stuffling.git ~/stuffling
+
+        mv ~/stuffling/dotfiles/containers/.vim ~
+        
+        mv ~/stuffling/dotfiles/containers/.vimrc ~
+
+        mv ~/stuffling/dotfiles/containers/.bashrc ~
+
+        mv ~/stuffling/dotfiles/containers/.gitconfig ~
+
+        mv ~/stuffling/dotfiles/containers/.dircolors/dircolors.monokai ~/.dircolors.monokai
+
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+        vim +PluginInstall +qall
+
+* #### Install git-prompt
+
+        git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+
+        mv ~/stuffling/dotfiles/containers/.git-prompt-colors.sh ~/.git-prompt-colors.sh
 
 
 PS: 
