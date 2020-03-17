@@ -88,6 +88,8 @@
 
         mv ~/stuffling/dotfiles/win/.dircolors/dircolors.default /root/.dircolors.default
 
+        mv ~/stuffling/dotfiles/root/vs-code.settings.json ~/.vscode-server/data/Machine/settings.json
+
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
         Switch to root:
