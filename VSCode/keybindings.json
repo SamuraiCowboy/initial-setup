@@ -1,5 +1,46 @@
-// Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
+    {
+        "key": "ctrl+alt+.",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+alt+,",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+k",
+        "command": "workbench.view.extension.dockerView"
+    },
+    {
+        "key": "ctrl+shift+b ctrl+shift+p",
+        "command": "workbench.view.extension.browser-preview"
+    },
+    {
+        "key": "ctrl+shift+j ctrl+shift+m",
+        "command": "workbench.view.extension.project-manager"
+    },
+    {
+        "key": "ctrl+shift+s ctrl+shift+q",
+        "command": "workbench.view.extension.SQLToolsExplorer"
+    },
+    {
+        "key": "ctrl+shift+r ctrl+shift+e",
+        "command": "workbench.view.remote"
+    },
+    {
+        "key": "ctrl+shift+s ctrl+shift+t",
+        "command": "workbench.view.extension.sftp"
+    },
     {
         "key": "ctrl+g ctrl+l",
         "command": "git.pull"
@@ -63,6 +104,5 @@
         "key": "alt+up",
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
-    },
-
+    }
 ]
