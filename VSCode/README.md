@@ -1,7 +1,7 @@
 # Installation instructions
 
 * ## VSCode Executable 
-    [Download Portable Sublime 3](https://code.visualstudio.com/download)
+    [Download VS Code](https://code.visualstudio.com/download)
 * ## VSCode Executable
 
     #### Sublime Packages
