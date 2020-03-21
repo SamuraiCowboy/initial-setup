@@ -4,17 +4,17 @@
     [Download VS Code](https://code.visualstudio.com/download)
 * ## VSCode Executable
 
-    #### Sublime Packages
+    #### VS Code Extensions
     * [`Project Manager`](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
     * [`Docker`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
     * [`Browser Preview`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`docs-markdown`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`Remote - Containers`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`Remote - SSH`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`SFTP`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`SQLTools`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`Visual Studio IntelliCode`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [`DocBlocker`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+    * [`docs-markdown`]()
+    * [`Remote - Containers`]()
+    * [`Remote - SSH`]()
+    * [`SFTP`]()
+    * [`SQLTools`]()
+    * [`Visual Studio IntelliCode`]()
+    * [`DocBlocker`]()
     * Settings Sync
     * Code Runner
     * Better Comments
