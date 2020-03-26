@@ -110,31 +110,48 @@
 
 ## CONTAINERS (alpine)
 * #### onedark theme
-        apk update
-        apk upgrade
-        apk add git --no-cache -y
-        apk add -y vim --no-cache
-        apk add -y bash --no-cache
-        # dircolors not functional in alpine image
+[TODO](https://www.ionos.com/community/server-cloud-infrastructure/docker/understanding-and-managing-docker-container-volumes/) Automate
 
-        git clone https://github.com/AVRC26/stuffling.git ~/stuffling
+- ALPINE
+    ```bash
+    apk update
+    apk upgrade
+    apk add -y git --no-cache
+    apk add -y vim --no-cache
+    apk add -y bash --no-cache
+    apk add -y coreutils --no-cache
+    export SHELL=/bin/bash
+    export color_prompt=yes
+    source ~/.bashrc
+    ```
 
-        mv ~/stuffling/dotfiles/containers/.vim ~
-        
-        mv ~/stuffling/dotfiles/containers/.vimrc ~
+- DEBIAN
+- RHEL
 
-        mv ~/stuffling/dotfiles/containers/.bashrc ~
 
-        mv ~/stuffling/dotfiles/containers/.gitconfig ~
-
-        mv ~/stuffling/dotfiles/containers/.dircolors/dircolors.onehalfdark ~/.dircolors.onehalfdark
-
-        mv ~/stuffling/dotfiles/containers/vs-code.settings.json ~/.vscode-server/data/Machine/settings.json
-
-        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-        vim +PluginInstall +qall
-
+* #### **Get Dependencies**    
+    ```bash
+    git clone https://github.com/AVRC26/stuffling.git ~/stuffling
+    
+    mv ~/stuffling/dotfiles/containers/.vim ~
+    
+    mv ~/stuffling/dotfiles/containers/.vimrc ~
+    
+    mv ~/stuffling/dotfiles/containers/.bashrc ~
+    
+    mv ~/stuffling/dotfiles/containers/.gitconfig ~
+    
+    mv ~/stuffling/dotfiles/containers/.dircolors/dircolors.onehalfdark ~/.dircolors.onehalfdark
+    
+    mkdir -p  ~/.vscode-server/data/Machine/
+    
+    mv ~/stuffling/dotfiles/containers/vs-code.settings.json ~/.vscode-server/data/Machine/settings.json
+    
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    
+    vim +PluginInstall +qall
+    ```
+    
 * #### Install git-prompt
 
         git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
