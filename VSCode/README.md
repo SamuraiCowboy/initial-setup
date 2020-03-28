@@ -62,5 +62,5 @@
 * ## Settings
     Copy these configs to VSCode home directory.
 
-    * settings.json
-    * keybindings.json
+    * settings.json (~/.config/Code/User/settings.json)
+    * keybindings.json (~/.config/Code/User/keybindings.json)
