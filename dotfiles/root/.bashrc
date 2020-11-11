@@ -105,7 +105,7 @@ alias gc='git commit -m'
 alias gk='git checkout'
 alias vi='vim'
 
-FILE=/home/centos/.vscode-server/data/Machine/settings.json
+FILE=/home/avrc26/.config/Code/User/settings.json
 if test -f "$FILE"; then
     # gruvbox light soft
     # sed -i "s/262626/f2e5bc/g" $FILE
