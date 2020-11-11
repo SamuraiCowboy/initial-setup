@@ -105,11 +105,6 @@
     EOL
 ```
 
-
-- `curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -`
-
-
-
 <br /><br />
 **HELP**
 
